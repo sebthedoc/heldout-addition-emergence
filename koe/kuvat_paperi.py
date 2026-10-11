@@ -22,13 +22,13 @@ ax[0].plot([.07, .205], [.07, .205], c="#888888", ls="--", lw=.8, zorder=2, labe
 for f in sorted(glob.glob(T + "v3_random_f0.1_pitka_s?.json") + glob.glob(T + "v7_pitka_f*_s?.json")):
     d = json.load(open(f)); acc = d["final"]["heldout"]
     ax[0].scatter(d["frac"] + .003, acc, s=22, marker="^", c=ORANGE if acc >= .9 else "white", edgecolors=ORANGE, lw=1, zorder=3)
-ax[0].scatter([], [], s=22, c=BLUE, label="40k steps, ≥90%"); ax[0].scatter([], [], s=22, c="white", edgecolors=BLUE, label="40k steps, <90%")
-ax[0].scatter([], [], s=22, marker="^", c="white", edgecolors=ORANGE, label="100k steps")
-ax[0].set(xlabel="training fraction of all pairs", ylabel="held-out accuracy (final)", ylim=(-.02, 1.05)); ax[0].legend(loc="center right", frameon=False); grid(ax[0])
+ax[0].scatter([], [], s=22, c=BLUE, label="40k, ≥90%"); ax[0].scatter([], [], s=22, c="white", edgecolors=BLUE, label="40k, <90%")
+ax[0].scatter([], [], s=22, marker="^", c="white", edgecolors=ORANGE, label="100k")
+ax[0].set(xlabel="training fraction of all pairs", ylabel="held-out accuracy (final)", ylim=(-.02, 1.05)); ax[0].legend(loc="upper left", bbox_to_anchor=(0.0, .9), frameon=False); grid(ax[0])
 for fr in (0.1, 0.12, 0.15, 0.2):
     for i, f in enumerate(sorted(glob.glob(T + f"v2_random_f{fr}_s?.csv"))):
         r = rd(f); ax[1].plot([int(x["step"]) / 1000 for x in r], [float(x["heldout"]) for x in r], c=RAMP[fr], ls=STYLE[fr], lw=1, label=f"{fr:.0%}" if i == 0 else None)
-ax[1].set(xlabel="training step (thousands)", ylabel="held-out accuracy", ylim=(-.02, 1.05)); ax[1].legend(title="fraction", frameon=False, loc="center right"); grid(ax[1])
+ax[1].set(xlabel="training step (thousands)", ylabel="held-out accuracy", ylim=(-.02, 1.05)); ax[1].legend(title="fraction", frameon=False, loc="center left", bbox_to_anchor=(1.0, .5)); grid(ax[1])
 plt.tight_layout(); plt.savefig(T + "paperi_faasi.pdf")
 
 # Kuva 2: rakennemittarit ja pois jätettyjen tarkkuus ajassa (v6_track)

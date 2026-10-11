@@ -1,0 +1,24 @@
+{
+ "n": 100,
+ "frac": 0.14,
+ "holdout": "random",
+ "seed": 2,
+ "steps": 100000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "track": false,
+ "save": false,
+ "out": "../tulokset/v7_pitka_f0.14_s2",
+ "n_train": 1400,
+ "n_heldout": 8600,
+ "final": {
+  "step": 100000,
+  "loss": 5.618993782263715e-06,
+  "train": 1.0,
+  "heldout": 0.731627881526947,
+  "heldout_loss": 1.7070621252059937
+ }
+}
