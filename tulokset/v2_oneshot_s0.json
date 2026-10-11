@@ -1,0 +1,22 @@
+{
+ "n": 100,
+ "frac": 0.7,
+ "holdout": "oneshot",
+ "seed": 0,
+ "steps": 30000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "out": "../tulokset/v2_oneshot_s0",
+ "n_train": 9224,
+ "n_heldout": 776,
+ "final": {
+  "step": 30000,
+  "loss": 0.047060854732990265,
+  "train": 0.9978317618370056,
+  "heldout": 0.219072163105011,
+  "heldout_loss": 16.96209716796875
+ }
+}

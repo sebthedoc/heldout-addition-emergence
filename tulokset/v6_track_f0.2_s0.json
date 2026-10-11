@@ -1,0 +1,26 @@
+{
+ "n": 100,
+ "frac": 0.2,
+ "holdout": "random",
+ "seed": 0,
+ "steps": 40000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "track": true,
+ "save": false,
+ "out": "../tulokset/v6_track_f0.2_s0",
+ "n_train": 2000,
+ "n_heldout": 8000,
+ "final": {
+  "step": 40000,
+  "loss": 2.715050504775718e-05,
+  "train": 1.0,
+  "heldout": 0.9927499890327454,
+  "heldout_loss": 0.2207673341035843,
+  "summainvarianssi": 0.9736341256648302,
+  "fourier_top5": 0.6769567728042603
+ }
+}

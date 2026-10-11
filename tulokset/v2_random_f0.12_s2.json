@@ -1,0 +1,22 @@
+{
+ "n": 100,
+ "frac": 0.12,
+ "holdout": "random",
+ "seed": 2,
+ "steps": 40000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "out": "../tulokset/v2_random_f0.12_s2",
+ "n_train": 1200,
+ "n_heldout": 8800,
+ "final": {
+  "step": 40000,
+  "loss": 4.831948672290309e-07,
+  "train": 1.0,
+  "heldout": 0.12590909004211426,
+  "heldout_loss": 15.051695823669434
+ }
+}

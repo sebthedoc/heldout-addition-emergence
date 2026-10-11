@@ -1,0 +1,23 @@
+{
+ "n": 100,
+ "frac": 0.1,
+ "holdout": "random",
+ "seed": 0,
+ "steps": 40000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "save": true,
+ "out": "../tulokset/v5_malli_f0.1_s0",
+ "n_train": 1000,
+ "n_heldout": 9000,
+ "final": {
+  "step": 40000,
+  "loss": 5.7284642025479116e-06,
+  "train": 1.0,
+  "heldout": 0.10855555534362793,
+  "heldout_loss": 14.09099292755127
+ }
+}

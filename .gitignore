@@ -1,0 +1,5 @@
+julkaise.sh
+.DS_Store
+__pycache__/
+*.pt
+.venv/

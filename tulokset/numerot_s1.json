@@ -1,0 +1,15 @@
+{
+ "seed": 1,
+ "steps": 8000,
+ "wd": 0.1,
+ "out": "../tulokset/numerot_s1",
+ "n_train": 241826,
+ "final": {
+  "step": 8000,
+  "loss": 0.0009561541373841465,
+  "ctl_ei_etene": 1.0,
+  "ctl_ei_etene_loss": 0.0009226010297425091,
+  "pois_etenee": 0.004999999888241291,
+  "pois_etenee_loss": 3.3077151775360107
+ }
+}

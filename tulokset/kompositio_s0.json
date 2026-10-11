@@ -1,0 +1,15 @@
+{
+ "seed": 0,
+ "steps": 30000,
+ "wd": 1.0,
+ "out": "../tulokset/kompositio_s0",
+ "n_train": 191000,
+ "final": {
+  "step": 30000,
+  "loss": 1.7832286357879639,
+  "ctl_nahty_kuvio": 0.33160001039505005,
+  "ctl_nahty_kuvio_loss": 1.678812861442566,
+  "pois_a-b-c": 0.012799999676644802,
+  "pois_a-b-c_loss": 16.05379295349121
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "n": 100,
+ "frac": 0.7,
+ "holdout": "diag",
+ "seed": 2,
+ "steps": 10000,
+ "d": 128,
+ "layers": 2,
+ "wd": 1.0,
+ "out": "../tulokset/diag_s2",
+ "n_train": 9900,
+ "n_heldout": 100,
+ "final": {
+  "step": 10000,
+  "loss": 0.007438464090228081,
+  "train": 1.0,
+  "heldout": 0.9800000190734863,
+  "heldout_loss": 0.8357261419296265
+ }
+}

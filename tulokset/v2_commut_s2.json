@@ -1,0 +1,22 @@
+{
+ "n": 100,
+ "frac": 0.7,
+ "holdout": "commut",
+ "seed": 2,
+ "steps": 30000,
+ "d": 128,
+ "layers": 2,
+ "warmup": 500,
+ "clip": 1.0,
+ "wd": 1.0,
+ "out": "../tulokset/v2_commut_s2",
+ "n_train": 5050,
+ "n_heldout": 4950,
+ "final": {
+  "step": 30000,
+  "loss": 0.1999286264181137,
+  "train": 0.9742574095726013,
+  "heldout": 0.9539393782615662,
+  "heldout_loss": 0.14080043137073517
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "n": 100,
+ "frac": 0.7,
+ "holdout": "random",
+ "seed": 0,
+ "steps": 5000,
+ "wd": 1.0,
+ "out": "../tulokset/savutesti",
+ "n_train": 7000,
+ "n_heldout": 3000,
+ "final": {
+  "step": 5000,
+  "loss": 0.028954707086086273,
+  "train": 1.0,
+  "heldout": 0.9990000128746033
+ }
+}
